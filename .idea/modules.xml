@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/algorithm-code.iml" filepath="$PROJECT_DIR$/.idea/algorithm-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interviewcode/interviewcode.iml" filepath="$PROJECT_DIR$/interviewcode/interviewcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lintcode/lintcode.iml" filepath="$PROJECT_DIR$/lintcode/lintcode.iml" />
+    </modules>
+  </component>
+</project>
