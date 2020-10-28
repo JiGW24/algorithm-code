@@ -1,2 +1,7 @@
 # algorithm-code
-lintcode and so on
+
+## lintcode
+
+- 575 Decode String
+
+
