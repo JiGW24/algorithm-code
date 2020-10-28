@@ -12,6 +12,7 @@ package code;
  */
 
 public class Solution {
+
     /**
      * @param s: an expression includes numbers, letters and brackets
      * @return: a string

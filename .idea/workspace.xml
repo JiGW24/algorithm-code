@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f1d05e8-1788-4b73-9ead-96797c28aa1d" name="Default Changelist" comment="" />
+    <list default="true" id="0f1d05e8-1788-4b73-9ead-96797c28aa1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/lintcode/202010/code/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/lintcode/202010/code/Solution.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +121,7 @@
       <updated>1603289625595</updated>
       <workItem from="1603289627477" duration="203000" />
       <workItem from="1603809321306" duration="10840000" />
-      <workItem from="1603881130636" duration="520000" />
+      <workItem from="1603881130636" duration="1138000" />
     </task>
     <servers />
   </component>
