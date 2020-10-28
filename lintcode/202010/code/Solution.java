@@ -10,6 +10,7 @@ package code;
  * Input: S = abc3[a]
  * Output: "abcaaa"
  */
+
 public class Solution {
     /**
      * @param s: an expression includes numbers, letters and brackets
