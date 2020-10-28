@@ -1,7 +1,10 @@
+package code;
+
 /**
  * 575
  * Given an expression s contains numbers, letters and brackets.
- * Number represents the number of repetitions inside the brackets(can be a string or another expression)．Please expand expression to be a string.
+ * Number represents the number of repetitions inside the brackets(can be a string or another expression)．
+ * Please expand expression to be a string.
  *
  * eg:
  * Input: S = abc3[a]
@@ -23,28 +26,28 @@ public class Solution {
             //查找第一个数字的位置 且拿到整个数字
             char c = s.charAt(i);
             target = String.valueOf(c);
-            if(c>'0'&&c<'9' || c == '0'){
+            if(c>'0'&&c<'9' || c == '0') {
                 if (c == '0') {
                     target = "0";
                 }
                 for (int j = i - 1; j > 0; j--) {
                     char d = s.charAt(j);
-                    if (d>'0'&&d<'9') {
+                    if (d > '0' && d < '9') {
                         target = target.concat(String.valueOf(d));
                         n = j;
-                    } else if ("[".equals(String.valueOf(d))){
+                    } else if ("[".equals(String.valueOf(d))) {
                         break;
-                    }else {
+                    } else {
                         if (c == '0') {
                             if (d == '0') {
                                 target = target.concat(String.valueOf(d));
-                                n=j;
+                                n = j;
                                 continue;
                             } else {
                                 //去除这个
-                                if (i -j == 1) {
+                                if (i - j == 1) {
                                     //获取下一个】
-                                    int o = s.indexOf("]",i);
+                                    int o = s.indexOf("]", i);
                                     String substring = s.substring(i, o + 1);
                                     //去掉这个字符串
                                     s = s.replace(substring, "");
@@ -55,11 +58,9 @@ public class Solution {
                         break;
                     }
                 }
-                //if (flag) {
-                    //颠倒
-                    StringBuilder builder = new StringBuilder(target);
-                    target = builder.reverse().toString();
-                //}
+                //颠倒
+                StringBuilder builder = new StringBuilder(target);
+                target = builder.reverse().toString();
 
                 //获取【】查从该坐标起第一个】
                 int first = s.indexOf("]", i);
@@ -72,15 +73,7 @@ public class Solution {
                 target = front + getStr(target) + end;
                 System.out.println(target);
                 break;
-            }/*else if (c=='0'){
-                //看前面是不是字母 是字母去掉
-                int indexx = i -1;
-                char c1 = s.charAt(indexx);
-                if (!(c1>'0'&&c1<'9')) {
-                    s = s.substring(0, i -1);
-                    expressionExpand(s);
-                }
-            }*/
+            }
         }
 
 
